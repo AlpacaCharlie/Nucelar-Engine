@@ -1,0 +1,3 @@
+AEEngine (April 18th 2018)
+
+*fixed an issue with AEGfxFullScreen where the height of the window would not take into account the task bar. 
