@@ -132,8 +132,13 @@ void JsonDemo::Initialize()
 	Gameobject test;
 	test.ID = 1;
 	test.Name = "MyTestObjectHaha";
+	test.Components.push_back(2);
+	test.Components.push_back(34);
+	test.Components.push_back(16);
+	test.Components.push_back(32);
+	test.Components.push_back(5);
 	Serializer TestSerializer;
-	TestSerializer.SerializeGameObject(test, "TestLevel");
+	TestSerializer.SerializeGameObject(test, "Level1");
 
 }
 void JsonDemo::LoadResources()
