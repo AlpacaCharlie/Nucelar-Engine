@@ -2,6 +2,7 @@
 #include "JsonDemo.h"
 #include <iostream>
 #include <fstream>
+#include "src\Engine\Architecture\Serializer.h"
 using namespace AEX;
 
 #include "src\Engine\Json\Json.h"
@@ -125,15 +126,22 @@ void JsonDemo::Initialize()
 
 	exit(1);*/
 
-	GettingStartedWithJson();
-	exit(1);
+	/*GettingStartedWithJson();
+	exit(1);*/
+
+	Gameobject test;
+	test.ID = 1;
+	test.Name = "MyTestObjectHaha";
+	Serializer TestSerializer;
+	TestSerializer.SerializeGameObject(test, "TestLevel");
+
 }
 void JsonDemo::LoadResources()
 {
 }
 void JsonDemo::Update()
 {
-	// get main window dimensions
+	/*// get main window dimensions
 	auto mainWin = aexWindowMgr->GetMainWindow();
 	auto winWH = AEVec2(f32(mainWin->GetWidth()), f32(mainWin->GetHeight()));
 
@@ -157,7 +165,7 @@ void JsonDemo::Update()
 	aexWindowMgr->GetMainWindow()->SetTitle(wintitle.c_str());
 
 
-	Logic::Instance()->Update();
+	Logic::Instance()->Update();*/
 
 }
 void JsonDemo::Render()

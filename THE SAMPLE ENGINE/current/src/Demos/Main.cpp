@@ -7,6 +7,6 @@
 void main(void)
 {
 	aexEngine->Initialize();
-	aexEngine->Run(new ImGuiDemo);
+	aexEngine->Run(new JsonDemo);
 	AEX::AEXEngine::ReleaseInstance();
 }

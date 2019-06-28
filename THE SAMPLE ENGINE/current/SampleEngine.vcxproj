@@ -108,6 +108,7 @@
     <ClCompile Include="src\Demos\JsonDemo\JsonDemo.cpp" />
     <ClCompile Include="src\Demos\Simple Demo\SimpleDemo.cpp" />
     <ClCompile Include="src\Engine\AEX.cpp" />
+    <ClCompile Include="src\Engine\Architecture\Serializer.cpp" />
     <ClCompile Include="src\Engine\Composition\AEXComponent.cpp" />
     <ClCompile Include="src\Engine\Composition\AEXGameObject.cpp" />
     <ClCompile Include="src\Engine\Core\AEXRtti.cpp" />
@@ -147,6 +148,7 @@
     <ClInclude Include="src\Demos\JsonDemo\JsonDemo.h" />
     <ClInclude Include="src\Demos\Simple Demo\SimpleDemo.h" />
     <ClInclude Include="src\Engine\AEX.h" />
+    <ClInclude Include="src\Engine\Architecture\Serializer.h" />
     <ClInclude Include="src\Engine\Composition\AEXComponent.h" />
     <ClInclude Include="src\Engine\Composition\AEXComposition.h" />
     <ClInclude Include="src\Engine\Composition\AEXGameObject.h" />

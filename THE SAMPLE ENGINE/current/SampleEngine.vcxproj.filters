@@ -88,6 +88,7 @@
     <ClCompile Include="src\Engine\ImGui\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\Engine\ImGui\Gui.cpp" />
     <ClCompile Include="src\Engine\Json\Json.cpp" />
+    <ClCompile Include="src\Engine\Architecture\Serializer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Engine\Core\AEXBase.h">
@@ -212,6 +213,7 @@
     <ClInclude Include="src\Engine\ImGui\Gui.h" />
     <ClInclude Include="src\Engine\Json\Json.h" />
     <ClInclude Include="src\Engine\Json\json.hpp" />
+    <ClInclude Include="src\Engine\Architecture\Serializer.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
