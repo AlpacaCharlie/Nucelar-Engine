@@ -123,6 +123,11 @@
     <ClCompile Include="src\Engine\Graphics\Components\AEXCamera.cpp" />
     <ClCompile Include="src\Engine\Graphics\Components\AEXRenderable.cpp" />
     <ClCompile Include="src\Engine\Graphics\Components\AEXViewport.cpp" />
+    <ClCompile Include="src\Engine\GSM\GameStateManager.cpp" />
+    <ClCompile Include="src\Engine\GSM\IbaiLevel1.cpp" />
+    <ClCompile Include="src\Engine\GSM\Input.cpp" />
+    <ClCompile Include="src\Engine\GSM\System.cpp" />
+    <ClCompile Include="src\Engine\GSM\Utils.cpp" />
     <ClCompile Include="src\Engine\ImGui\Gui.cpp" />
     <ClCompile Include="src\Engine\ImGui\imgui\imgui.cpp" />
     <ClCompile Include="src\Engine\ImGui\imgui\imgui_demo.cpp" />
@@ -169,6 +174,12 @@
     <ClInclude Include="src\Engine\Graphics\Components\AEXCamera.h" />
     <ClInclude Include="src\Engine\Graphics\Components\AEXRenderable.h" />
     <ClInclude Include="src\Engine\Graphics\Components\AEXViewport.h" />
+    <ClInclude Include="src\Engine\GSM\GameStateList.h" />
+    <ClInclude Include="src\Engine\GSM\GameStateManager.h" />
+    <ClInclude Include="src\Engine\GSM\IbaiLevel1.h" />
+    <ClInclude Include="src\Engine\GSM\Input.h" />
+    <ClInclude Include="src\Engine\GSM\System.h" />
+    <ClInclude Include="src\Engine\GSM\Utils.h" />
     <ClInclude Include="src\Engine\ImGui\Gui.h" />
     <ClInclude Include="src\Engine\ImGui\imgui\imconfig.h" />
     <ClInclude Include="src\Engine\ImGui\imgui\imgui.h" />

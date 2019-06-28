@@ -88,6 +88,21 @@
     <ClCompile Include="src\Engine\ImGui\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\Engine\ImGui\Gui.cpp" />
     <ClCompile Include="src\Engine\Json\Json.cpp" />
+    <ClCompile Include="src\Engine\GSM\GameStateManager.cpp">
+      <Filter>GSM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\GSM\Input.cpp">
+      <Filter>GSM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\GSM\System.cpp">
+      <Filter>GSM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\GSM\Utils.cpp">
+      <Filter>GSM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\GSM\IbaiLevel1.cpp">
+      <Filter>GSM</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Engine\Core\AEXBase.h">
@@ -212,6 +227,24 @@
     <ClInclude Include="src\Engine\ImGui\Gui.h" />
     <ClInclude Include="src\Engine\Json\Json.h" />
     <ClInclude Include="src\Engine\Json\json.hpp" />
+    <ClInclude Include="src\Engine\GSM\GameStateList.h">
+      <Filter>GSM</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\GSM\GameStateManager.h">
+      <Filter>GSM</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\GSM\Input.h">
+      <Filter>GSM</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\GSM\System.h">
+      <Filter>GSM</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\GSM\Utils.h">
+      <Filter>GSM</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\GSM\IbaiLevel1.h">
+      <Filter>GSM</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
@@ -273,6 +306,9 @@
     </Filter>
     <Filter Include="Demos\ImGuiDemo">
       <UniqueIdentifier>{f21f2e92-100a-410c-bf35-b4e6468b53fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GSM">
+      <UniqueIdentifier>{00e028ee-829f-4b0d-a11c-bb0c0f281c9f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
