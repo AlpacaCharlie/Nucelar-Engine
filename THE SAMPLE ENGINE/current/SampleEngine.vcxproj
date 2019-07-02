@@ -104,6 +104,7 @@
     <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Demos\GraphicsDemo\GraphicsDemo.cpp" />
     <ClCompile Include="src\Demos\Imgui Demo\ImGuiDemo.cpp" />
     <ClCompile Include="src\Demos\JsonDemo\JsonDemo.cpp" />
     <ClCompile Include="src\Demos\Simple Demo\SimpleDemo.cpp" />
@@ -142,6 +143,7 @@
     <ClCompile Include="src\Engine\Scene\AEXTransformComp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Demos\GraphicsDemo\GraphicsDemo.h" />
     <ClInclude Include="src\Demos\Imgui Demo\ImGuiDemo.h" />
     <ClInclude Include="src\Demos\Imgui Demo\imgui\imconfig.h" />
     <ClInclude Include="src\Demos\JsonDemo\JsonDemo.h" />
