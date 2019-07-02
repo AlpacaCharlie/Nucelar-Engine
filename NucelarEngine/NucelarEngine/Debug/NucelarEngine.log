@@ -1,8 +1,0 @@
-﻿  glad.c
-c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
-  c:\users\j.guerra\desktop\nucelarengine\nucelarengine\opengl\includes\glad\glad.h(634): note: see previous definition of 'APIENTRY'
-  main.cpp
-main.obj : error LNK2019: unresolved external symbol _glfwInit referenced in function _main
-main.obj : error LNK2019: unresolved external symbol _glfwWindowHint referenced in function _main
-C:\Users\j.guerra\Desktop\NucelarEngine\NucelarEngine\OpenGL\Libs\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
-C:\Users\j.guerra\Desktop\NucelarEngine\Debug\NucelarEngine.exe : fatal error LNK1120: 2 unresolved externals
