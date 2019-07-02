@@ -30,6 +30,4 @@ GLFWwindow* Graphics::InitializeWindow(int width, int height) {
 
 
 
-void Graphics::DrawRectangle(float x, float y, float width, float height) {
-	
-}
+
