@@ -84,7 +84,7 @@
     <IncludePath>$(ProjectDir)OpenGL\Includes;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)OpenGL\Libs;$(LibraryPath)</LibraryPath>
     <ExecutablePath>C:\Users\j.guerra\Desktop\Nucelar-Engine\NucelarEngine\NucelarEngine\bin\Debug;$(ExecutablePath)</ExecutablePath>
-    <OutDir>$(SolutionDir)$(Configuration)</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>bin\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -168,7 +168,7 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\engine\graphics\graphics.h" />
+    <ClInclude Include="src\Engine\Graphics\Graphics.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
