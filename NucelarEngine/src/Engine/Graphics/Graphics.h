@@ -5,6 +5,4 @@ namespace Graphics {
 	GLFWwindow* InitializeWindow(int width, int height);
 
 
-
-
 }
