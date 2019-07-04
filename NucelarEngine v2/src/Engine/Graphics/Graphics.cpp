@@ -3,8 +3,8 @@
 
 GLFWwindow* Graphics::InitializeWindow(int width, int height) {
 	glfwInit();//initialize opengl
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);//set GLFW_CONTEXT_VERSION_MAJOR to 3
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);//set GLFW_CONTEXT_VERSION_MINOR to 3
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);//set GLFW_CONTEXT_VERSION_MAJOR to 3
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);//set GLFW_CONTEXT_VERSION_MINOR to 3
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 	GLFWwindow* window = glfwCreateWindow(width, height, "NucelarEngine", NULL, NULL);//pointer to window
