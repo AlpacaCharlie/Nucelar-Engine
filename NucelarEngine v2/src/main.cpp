@@ -1,6 +1,6 @@
 #include "Graphics.h"
 #include <iostream>
-#include "Color.h"
+#include "Graphics/Color/Color.h"
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
 		Color carioca = Color{ 0xffffff00 };
 
 		//render/por ahora pone naranja toda la pantalla cada frame (los dos buffers)
-		glClearColor(plastidecor.r , plastidecor.g, plastidecor.b, plastidecor.a);//naranja
+		glClearColor(plastidecor.v[0] , plastidecor.g, plastidecor.b, plastidecor.a);//naranja
 		glClear(GL_COLOR_BUFFER_BIT);
 		glfwSwapBuffers(window);
 		glClearColor(carioca.r, carioca.g, carioca.b, carioca.a);//naranja

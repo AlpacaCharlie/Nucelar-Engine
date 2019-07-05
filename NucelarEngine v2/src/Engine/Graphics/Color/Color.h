@@ -2,7 +2,11 @@
 #include "vec4.hpp"
 class Color {
 public:
-	float r, g, b, a;
+	union {
+		float r, g, b, a;
+
+		float v[4];
+	};
 	//Default constructor
 	Color():r(0.0f), g(0.0f), b(0.0f), a(1.0f) {}
 
