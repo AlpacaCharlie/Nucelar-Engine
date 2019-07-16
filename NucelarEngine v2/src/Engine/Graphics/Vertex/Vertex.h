@@ -1,21 +1,22 @@
 #pragma once
-#include "Color.h"
+#include "Color/Color.h"
+#include "vec3.hpp"
 
 class Vertex {
-	float x, y, z;
+	glm::vec3 mPosition;
 	Color c;
 
 	Vertex(float _x = 0, float _y = 0, float _z = 0, Color _c = Color{}) {
-		x = _x;
-		y = _y;
-		z = _z;
+		mPosition.x = _x;
+		mPosition.y = _y;
+		mPosition.z = _z;
 		c = _c;
 	}
 
 	Vertex(const Vertex & v) {
-		x = v.x;
-		y = v.y;
-		z = v.z;
+		mPosition.x = v.mPosition.x;
+		mPosition.y = v.mPosition.y;
+		mPosition.z = v.mPosition.z;
 		c = v.c;
 	}
 
@@ -23,5 +24,7 @@ class Vertex {
 	Vertex operator+= (const Vertex& rhs);
 	Vertex operator- (const Vertex& rhs);
 	Vertex operator-= (const Vertex& rhs);
+	Vertex operator* (const float& rhs);
+	Vertex operator*= (const float& rhs);
 
 };

@@ -1,5 +1,8 @@
 #include "Color.h"
 
+Color Color::operator = (const Color& rhs) {
+	return Color{ rhs };
+}
 Color Color::operator * (const Color& rhs) {
 	return Color{ r * rhs.r, g * rhs.g, b * rhs.b, a * rhs.a };
 }

@@ -3,7 +3,9 @@
 class Color {
 public:
 	union {
-		float r, g, b, a;
+		struct {
+			float r, g, b, a;
+		};
 
 		float v[4];
 	};
@@ -11,22 +13,22 @@ public:
 	Color():r(0.0f), g(0.0f), b(0.0f), a(1.0f) {}
 
 	Color(float _r, float _g, float _b, float _a) {
-		if (_r > 0 && _r < 1)
+		if (_r >= 0.0f && _r <= 1.0f)
 			r = _r;
 		else
 			r = _r / 255.0f;
 
-		if (_g > 0 && _g < 1)
+		if (_g >= 0.0f && _g <= 1.0f)
 			g = _g;
 		else
 			g = _g / 255.0f;
 
-		if (_b > 0 && _b < 1)
+		if (_b >= 0.0f && _b <= 1.0f)
 			b = _b;
 		else
 			b = _b / 255.0f;
 
-		if (_a > 0 && _a < 1)
+		if (_a >= 0.0f && _a <= 1.0f)
 			a = _a;
 		else
 			a = _a / 255.0f;
@@ -58,7 +60,7 @@ public:
 		a = (float)aa / 255.0f;
 	}
 
-
+	Color operator = (const Color& rhs);
 	Color operator * (const Color& rhs);
 	Color operator *= (const Color& rhs);
 	Color operator * (const float& rhs);
