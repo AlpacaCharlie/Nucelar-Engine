@@ -99,7 +99,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\j.guerra\Desktop\Nucelar-Engine\NucelarEngine v2\Extern\glm\gtx;C:\Users\j.guerra\Desktop\Nucelar-Engine\NucelarEngine v2\Extern\glm\gtc;C:\Users\j.guerra\Desktop\Nucelar-Engine\NucelarEngine v2\Extern\glm\detail;C:\Users\j.guerra\Desktop\Nucelar-Engine\NucelarEngine v2\Extern\glm;$(ProjectDir)src/Engine;$(ProjectDir)src/Game;$(ProjectDir)src;$(ProjectDir)src/Engine/Graphics;$(ProjectDir)Extern/OpenGL/Includes/glad;$(ProjectDir)Extern/OpenGL/Includes/GLFW;$(ProjectDir)Extern/OpenGL/Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Extern\glm\gtx;$(ProjectDir)Extern\glm\gtc;$(ProjectDir)Extern\glm\detail;$(ProjectDir)Extern\glm;$(ProjectDir)src/Engine;$(ProjectDir)src/Game;$(ProjectDir)src;$(ProjectDir)src/Engine/Graphics;$(ProjectDir)Extern/OpenGL/Includes/glad;$(ProjectDir)Extern/OpenGL/Includes/GLFW;$(ProjectDir)Extern/OpenGL/Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>

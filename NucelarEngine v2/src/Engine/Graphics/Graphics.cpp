@@ -6,8 +6,9 @@ GLFWwindow* Graphics::InitializeWindow(int width, int height) {
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);//set GLFW_CONTEXT_VERSION_MAJOR to 3
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);//set GLFW_CONTEXT_VERSION_MINOR to 3
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-	GLFWwindow* window = glfwCreateWindow(width, height, "NucelarEngine", NULL, NULL);//pointer to window
+	glfwWindowHint(GLFW_REFRESH_RATE, 60);//60 fps max
+	auto monitor = glfwGetPrimaryMonitor();
+	GLFWwindow* window = glfwCreateWindow(glfwGetVideoMode(monitor)->width, glfwGetVideoMode(monitor)->height, "NucelarEngine", monitor, NULL);//pointer to window
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
