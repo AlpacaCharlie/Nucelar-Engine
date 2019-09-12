@@ -57,6 +57,8 @@ namespace AEX
 		void DrawCircle(f32 cX, f32 cY, f32 radius, Color col = AEX::Color(), f32 angle_start = 0, f32 angle_end = TWO_PI);
 
 
+
+
 		#pragma region// Basic Resource Management
 		//
 		// TODO(Thomas): Move this to resource management system.

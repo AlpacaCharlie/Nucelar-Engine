@@ -3,6 +3,7 @@
 #include "Simple Demo\SimpleDemo.h"
 #include "JsonDemo\JsonDemo.h"
 #include "Imgui Demo\ImGuiDemo.h"
+#include "GraphicsDemo\GraphicsDemo.h"
 
 std::stringstream console;
 
@@ -14,7 +15,7 @@ void main(void)
 
 
 	aexEngine->Initialize();
-	aexEngine->Run(new ImGuiDemo);
+	aexEngine->Run(new GraphicsDemo);
 	AEX::AEXEngine::ReleaseInstance();
 
 	std::cout.rdbuf(coutbuf);
