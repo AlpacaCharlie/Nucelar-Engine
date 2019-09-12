@@ -167,6 +167,7 @@
     <ClCompile Include="Extern\glm\detail\glm.cpp" />
     <ClCompile Include="src\Editor\ImGuiDemo.cpp" />
     <ClCompile Include="src\Engine\AEX\AEXRtti.cpp" />
+    <ClCompile Include="src\Engine\BasicTypes\NGameObject.cpp" />
     <ClCompile Include="src\Engine\Graphics\Color\Color.cpp" />
     <ClCompile Include="src\Engine\Graphics\Graphics.cpp" />
     <ClCompile Include="src\Engine\Graphics\glad.c" />
@@ -323,6 +324,7 @@
     <ClInclude Include="src\Engine\AEX\AEXDataTypes.h" />
     <ClInclude Include="src\Engine\AEX\AEXRtti.h" />
     <ClInclude Include="src\Engine\AEX\AEXSystem.h" />
+    <ClInclude Include="src\Engine\BasicTypes\NGameObject.h" />
     <ClInclude Include="src\Engine\Graphics\Color\Color.h" />
     <ClInclude Include="src\Engine\Graphics\Graphics.h" />
     <ClInclude Include="src\Engine\Graphics\Vertex\Vertex.h" />
