@@ -4,8 +4,8 @@
 
 int main()
 {
-	GLFWwindow* window = Graphics::InitializeWindow(800, 600);//width and height are useless, it is fullscreen and with the resolution of the display
-	Color plastidecor = Color( 1.0f,0.5f,0.0f,1.0f );
+	GLFWwindow* window = Graphics::InitializeWindow(800, 600, false);//width and height are useless, it is fullscreen and with the resolution of the display
+	Color plastidecor = BLUE;
 	Color carioca = Color{ 255,48,0,255 };
 
 		//const GLFWvidmode* mode = glfwGetVideoMode(window);

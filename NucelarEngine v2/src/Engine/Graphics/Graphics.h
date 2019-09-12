@@ -2,7 +2,7 @@
 #include "glfw3.h"
 
 namespace Graphics {
-	GLFWwindow* InitializeWindow(int width, int height);
+	GLFWwindow* InitializeWindow(int width, int height, bool fullscreen = false);
 
 
 }
