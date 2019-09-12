@@ -413,9 +413,13 @@ namespace AEX
 		DrawLine(bL, bR);
 		DrawLine(bR, tR);
 	}
+
+
+
 	void Graphics::DrawCircle(f32 cX, f32 cY, f32 radius, Color col, f32 angle_start, f32 angle_end)
 	{
 		AEVec2 center = { cX, cY };
+
 		f32 iterations = 24;
 		if (angle_start > angle_end)
 			angle_end += TWO_PI;

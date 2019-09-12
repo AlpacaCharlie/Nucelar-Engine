@@ -1,21 +1,86 @@
 #include "ImGuiDemo.h"
 #include "../../Engine/ImGui/Gui.h"
+#include <sstream>
+
+extern std::stringstream console;
+
+namespace stdJ
+{
+	bool OpenConsole = false;
+
+}
 
 void TopBar() {
-	if (BeginMainMenuBar()) {
-		if (BeginMenu("File")) {
-			if (MenuItem("New", "Ctrl + N")) {
-				cout << "New\n";
+
+
+	if (BeginMainMenuBar())
+	{
+		if (BeginMenu("File"))
+		{
+			if (MenuItem("New", "Ctrl + N"))
+			{
+				cout << "New" << endl;
 			}
-			if (MenuItem("Open", "Crtl + O")) {
-				cout << "Open\n";
+			if (MenuItem("Open", "Crtl + O"))
+			{
+				cout << "Open" << endl;
 			}
-			if (MenuItem("Save", "Crtl + S")) {
-				cout << "Save\n";
+			if (MenuItem("Save", "Crtl + S"))
+			{
+				cout << "Save" << endl;
 			}
 			if (MenuItem("Save as")) {
-				cout << "Save as\n";
+				cout << "Save as" << endl;
 			}
+			ImGui::EndMenu();
+		}
+
+
+		if (BeginMenu("Levels"))
+		{
+			if (MenuItem("NewL", "Ctrl + L"))
+			{
+				cout << "New L" << endl;
+			}
+
+			if (BeginMenu("Open Level"))
+			{
+
+				if (MenuItem("New", "Ctrl + N"))
+				{
+					cout << "New" << endl;
+				}
+
+				//TODO 
+				//For loop for each level
+
+				ImGui::EndMenu();
+			}
+
+			ImGui::EndMenu();
+		}
+
+
+		if (BeginMenu("Tools"))
+		{
+			bool t = stdJ::OpenConsole;
+			if (Button("Console"))
+			{
+				stdJ::OpenConsole = !stdJ::OpenConsole;
+			}
+			if (t != stdJ::OpenConsole)
+			{
+				if (stdJ::OpenConsole == true)
+				{
+					cout << "Console Oppened" << endl;
+				}
+				else
+				{
+					cout << "Console Closed" << endl;
+				}
+			}
+			
+
 			ImGui::EndMenu();
 		}
 
@@ -36,11 +101,15 @@ void TopBar() {
 }
 AEX::Transform tr{ AEVec2{100.0f,100.0f}, AEVec2{10.0f,10.0f}, PI };
 bool gVisible = true;
-void GameObjectWindow() {
+void GameObjectWindow()
+{
 	
-	if (Begin("Game Object")) {
-		if (CollapsingHeader("Object")) {
-			if (TreeNode("Transform")) {
+	if (Begin("Game Object")) 
+	{
+		if (CollapsingHeader("Object"))
+		{
+			if (TreeNode("Transform"))
+			{
 				Text("Position");
 				DragFloat3("a", tr.mTranslationZ.v, 0.5f, -10000.0f, 10000.0f); 
 				Text("Scale");
@@ -51,14 +120,17 @@ void GameObjectWindow() {
 				TreePop();
 			}
 			
-			if (TreeNode("Texture")) {
+			if (TreeNode("Texture"))
+			{
 				TreePop();
 			}
 			
-			if (MenuItem("Create")) {
+			if (MenuItem("Create"))
+			{
 				cout << "New game object created\n";
 			}
-			if (MenuItem("Delete")) {
+			if (MenuItem("Delete"))
+			{
 				cout << "Game object deleted\n";
 			}
 
@@ -72,14 +144,27 @@ void GameObjectWindow() {
 			//TreePop();
 		}
 	}
-	End();
 }
+
+void ConsoleWindow() 
+{
+	if (stdJ::OpenConsole == true)
+	{
+		if (Begin("Console"))
+		{
+			TextWrapped(console.str().c_str());
+		}
+		End();
+	}
+}
+
 
 void MyEditor() {
 
 	TopBar();
-	
+	ConsoleWindow();
 	GameObjectWindow();
+	End();
 	
 }
 // ----------------------------------------------------------------------------
@@ -135,7 +220,7 @@ void ImGuiDemo::Render()
 	aexGraphics->ClearFrameBuffer();
 
 	UpdateImGui();
-	//ShowDemoWindow();
+//	ShowDemoWindow();
 	MyEditor();
 	DrawImGui();
 
