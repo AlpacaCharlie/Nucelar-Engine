@@ -48,6 +48,9 @@
     <ClCompile Include="src\Engine\BasicTypes\NGameObject.cpp">
       <Filter>BasicTypes</Filter>
     </ClCompile>
+    <ClCompile Include="src\Engine\BasicTypes\NComponent.cpp">
+      <Filter>BasicTypes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Engine\Graphics\Graphics.h">
@@ -507,6 +510,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="src\Engine\BasicTypes\NGameObject.h">
+      <Filter>BasicTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\BasicTypes\NComponent.h">
       <Filter>BasicTypes</Filter>
     </ClInclude>
   </ItemGroup>
