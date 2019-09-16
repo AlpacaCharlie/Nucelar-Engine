@@ -169,6 +169,7 @@
     <ClCompile Include="src\Engine\AEX\AEXRtti.cpp" />
     <ClCompile Include="src\Engine\BasicTypes\NComponent.cpp" />
     <ClCompile Include="src\Engine\BasicTypes\NGameObject.cpp" />
+    <ClCompile Include="src\Engine\BasicTypes\NObjectManager.cpp" />
     <ClCompile Include="src\Engine\Factory\Json.cpp" />
     <ClCompile Include="src\Engine\Factory\Serializer.cpp" />
     <ClCompile Include="src\Engine\Graphics\Color\Color.cpp" />
@@ -330,6 +331,7 @@
     <ClInclude Include="src\Engine\AEX\AEXSystem.h" />
     <ClInclude Include="src\Engine\BasicTypes\NComponent.h" />
     <ClInclude Include="src\Engine\BasicTypes\NGameObject.h" />
+    <ClInclude Include="src\Engine\BasicTypes\NObjectManager.h" />
     <ClInclude Include="src\Engine\Factory\Json.h" />
     <ClInclude Include="src\Engine\Factory\json.hpp" />
     <ClInclude Include="src\Engine\Factory\Serializer.h" />

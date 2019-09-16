@@ -17,7 +17,7 @@ void NGameObject::SetEnabled(bool enabled)
 		(*it)->SetEnabled(enabled);
 }
 
-void NGameObject::Intialize()
+void NGameObject::Initialize()
 {
 	for (auto it = mComps.begin(); it != mComps.end(); ++it)
 		(*it)->Initialize();

@@ -12,8 +12,11 @@ public:
 	NGameObject();
 	virtual ~NGameObject();
 
+	bool mbAlive; //affects gameobject component
+	bool mbActive; //affects logic
+
 	virtual void SetEnabled(bool enabled); //Component sleep
-	virtual void Intialize(); //initializes every component
+	virtual void Initialize(); //initializes every component
 	virtual void ShutDown(); //frees stuff
 
 	#pragma region// COMPONENT MANAGEMENT
@@ -59,5 +62,7 @@ protected:
 	std::vector<IComp*> mComps;
 	bool mbEnabled;
 };
+
+typedef std::list<NGameObject*> GO_LIST;
 
 
