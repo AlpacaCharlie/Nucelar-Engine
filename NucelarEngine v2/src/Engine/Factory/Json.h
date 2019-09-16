@@ -18,26 +18,26 @@ struct ISerializable
 
 void ToJsonVec2(json & val, const vec2 & in);
 
-class MyTransform : public IComp, public ISerializable
+class MyTransform : public IComp
 {
 	AEX_RTTI_DECL(MyTransform, IComp);
 public:
 	MyTransform() :IComp() {}
 
 	void ToJson(json & val) {
-		ToJsonVec2(val["position"], pos);
-		ToJsonVec2(val["scale"], scale);
-		val["rotation"] = rotation;
+		ToJsonVec2(val["position"], mPosition);
+		ToJsonVec2(val["scale"], mScale);
+		val["rotation"] = mRotation;
 	}
 	void FromJson(json & val) {
 		// sanity
 		if (auto it = val.find("rotation") != val.end())
-			rotation = val["rotation"];
+			mRotation = val["rotation"];
 	}
 
 public:
-	vec2 pos, scale;
-	f32 rotation = 0.0f;
+	vec2 mPosition, mScale;
+	f32 mRotation = 0.0f;
 };
 
 

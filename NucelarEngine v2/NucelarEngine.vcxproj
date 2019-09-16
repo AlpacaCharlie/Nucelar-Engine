@@ -169,12 +169,17 @@
     <ClCompile Include="src\Engine\AEX\AEXRtti.cpp" />
     <ClCompile Include="src\Engine\BasicTypes\NComponent.cpp" />
     <ClCompile Include="src\Engine\BasicTypes\NGameObject.cpp" />
+    <ClCompile Include="src\Engine\Components\LogicComp.cpp" />
+    <ClCompile Include="src\Engine\Components\PhysicsSystem.cpp" />
+    <ClCompile Include="src\Engine\Components\RigidBody.cpp" />
     <ClCompile Include="src\Engine\Factory\Json.cpp" />
     <ClCompile Include="src\Engine\Factory\Serializer.cpp" />
     <ClCompile Include="src\Engine\Graphics\Color\Color.cpp" />
     <ClCompile Include="src\Engine\Graphics\Graphics.cpp" />
     <ClCompile Include="src\Engine\Graphics\glad.c" />
     <ClCompile Include="src\Engine\Graphics\Vertex\Vertex.cpp" />
+    <ClCompile Include="src\Engine\Math\Matrix33.cpp" />
+    <ClCompile Include="src\Engine\Math\Transform2D.cpp" />
     <ClCompile Include="src\Game\Level1.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
@@ -330,12 +335,17 @@
     <ClInclude Include="src\Engine\AEX\AEXSystem.h" />
     <ClInclude Include="src\Engine\BasicTypes\NComponent.h" />
     <ClInclude Include="src\Engine\BasicTypes\NGameObject.h" />
+    <ClInclude Include="src\Engine\Components\LogicComp.h" />
+    <ClInclude Include="src\Engine\Components\PhysicsSystem.h" />
+    <ClInclude Include="src\Engine\Components\RigidBody.h" />
     <ClInclude Include="src\Engine\Factory\Json.h" />
     <ClInclude Include="src\Engine\Factory\json.hpp" />
     <ClInclude Include="src\Engine\Factory\Serializer.h" />
     <ClInclude Include="src\Engine\Graphics\Color\Color.h" />
     <ClInclude Include="src\Engine\Graphics\Graphics.h" />
     <ClInclude Include="src\Engine\Graphics\Vertex\Vertex.h" />
+    <ClInclude Include="src\Engine\Math\Matrix33.h" />
+    <ClInclude Include="src\Engine\Math\Transform2D.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Extern\glm\detail\func_common.inl" />
