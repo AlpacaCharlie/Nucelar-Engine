@@ -31,7 +31,7 @@ void NGameObject::ShutDown()
 
 u32 NGameObject::GetCompCount() const
 {
-	return mComps.size();
+	return mComps.size(); //WARNING
 }
 
 IComp * NGameObject::GetComp(u32 index) const
@@ -56,8 +56,10 @@ IComp * NGameObject::GetComp(const Rtti & type) const
 {
 	for (auto it = mComps.begin(); it != mComps.end(); ++it)
 	{
-		if ((*it)->GetType().IsExactly(type));
+		if ((*it)->GetType().IsExactly(type))
+		{
 			return (*it);
+		}
 	}
 	return NULL;
 }
@@ -73,6 +75,8 @@ IComp * NGameObject::GetCompName(const char * compName, const char * compType) c
 			return (*it);
 		}
 	}
+
+	return nullptr;
 }
 
 void NGameObject::OnGui()
