@@ -51,6 +51,15 @@
     <ClCompile Include="src\Engine\BasicTypes\NComponent.cpp">
       <Filter>BasicTypes</Filter>
     </ClCompile>
+    <ClCompile Include="src\Engine\Factory\Json.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Factory\Serializer.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Level1.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Engine\Graphics\Graphics.h">
@@ -515,6 +524,15 @@
     <ClInclude Include="src\Engine\BasicTypes\NComponent.h">
       <Filter>BasicTypes</Filter>
     </ClInclude>
+    <ClInclude Include="src\Engine\Factory\Json.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Factory\json.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Factory\Serializer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Extern\glm\detail\func_common.inl">
@@ -844,5 +862,7 @@
     <None Include="Extern\glm\gtx\wrap.inl">
       <Filter>Archivos de encabezado</Filter>
     </None>
+    <None Include="imgui.ini" />
+    <None Include="NucelarEngine.VC.db" />
   </ItemGroup>
 </Project>

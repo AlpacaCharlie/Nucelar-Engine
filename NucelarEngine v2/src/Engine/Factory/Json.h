@@ -1,10 +1,13 @@
 #pragma once
-#include <aexmath\AEXMath.h>
-#include "src\Engine\AEX.h"
+#include "../../Extern/glm/glm.hpp"
+#include "../AEX/AEXCore.h"
 #include "json.hpp"
+#include "../Engine/BasicTypes/NComponent.h"
 
 using namespace AEX;
+
 using json = nlohmann::json;
+
 #define aexFactory (Factory::Instance())
 
 struct ISerializable
@@ -13,9 +16,7 @@ struct ISerializable
 	virtual void FromJson(json & val) = 0;
 };
 
-void ToJsonVec2(json & val, const AEVec2 & in);
-
-
+void ToJsonVec2(json & val, const vec2 & in);
 
 class MyTransform : public IComp, public ISerializable
 {
@@ -23,21 +24,19 @@ class MyTransform : public IComp, public ISerializable
 public:
 	MyTransform() :IComp() {}
 
-	void ToJson(json & val)
-	{
+	void ToJson(json & val) {
 		ToJsonVec2(val["position"], pos);
 		ToJsonVec2(val["scale"], scale);
 		val["rotation"] = rotation;
 	}
-	void FromJson(json & val)
-	{
+	void FromJson(json & val) {
 		// sanity
 		if (auto it = val.find("rotation") != val.end())
 			rotation = val["rotation"];
 	}
 
 public:
-	AEVec2 pos, scale;
+	vec2 pos, scale;
 	f32 rotation = 0.0f;
 };
 
@@ -88,6 +87,6 @@ public:
 
 
 
-void SaveObjectToJson(GameObject * go, json & val);
+void SaveObjectToJson(NGameObject * go, json & val);
 
-void LoadObjectFromJson(GameObject * obj, json & val);
+void LoadObjectFromJson(NGameObject * obj, json & val);

@@ -3,6 +3,7 @@
 #include "../AEX/AEXBase.h"
 #include "NComponent.h"
 using namespace AEX;
+
 class  NGameObject : public IBase
 {
 	AEX_RTTI_DECL(NGameObject, IBase);
