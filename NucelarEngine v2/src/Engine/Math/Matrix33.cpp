@@ -180,7 +180,6 @@ vec2 Matrix33 :: operator*(const vec2 & vec) const
 // 2D vector and not a point.
 vec2 Matrix33::MultVec(const vec2 & vec) const
 {
-
 	vec2 myVector;
 
 	//we simply perform the corresponding dot products
@@ -245,17 +244,17 @@ Matrix33 Matrix33::Scale(float sx, float sy)
 Matrix33 Matrix33::RotDeg(float angle_deg)
 {
 	//we first convert the passed angle into radians
-	float myangle = (angle_deg * PI) / 180;
+	//float myangle = (angle_deg * PI) / 180;
 
 	//and now, same procedure as in scale matrix and tras matrix
 	//changing the corresponding elements. I use cosl and sinl to get extra precision
 	Matrix33 myMatrix = Identity();
 
-	myMatrix.m[0][0] = cosl(myangle);
+	/*myMatrix.m[0][0] = cosl(myangle);
 	myMatrix.m[1][1] = myMatrix.m[0][0];
 
 	myMatrix.m[0][1] = -sinl(myangle);
-	myMatrix.m[1][0] = -myMatrix.m[0][1];
+	myMatrix.m[1][0] = -myMatrix.m[0][1];*/
 
 	return myMatrix;
 }
@@ -267,11 +266,11 @@ Matrix33 Matrix33::RotRad(float angle_rad)
 	//same as before, but with the angle already in radians.
 	Matrix33 myMatrix = Identity();
 
-	myMatrix.m[0][0] = cosl(angle_rad);
+	/*myMatrix.m[0][0] = cosl(angle_rad);
 	myMatrix.m[1][1] = myMatrix.m[0][0];
 
 	myMatrix.m[0][1] = -sinl(angle_rad);
-	myMatrix.m[1][0] = -myMatrix.m[0][1];
+	myMatrix.m[1][0] = -myMatrix.m[0][1];*/
 
 	return myMatrix;
 }

@@ -45,7 +45,7 @@ void RigidBody::Update()
 		AddForce(mGravity / mInvMass);
 
 	// Integrate physics
-	Integrate((f32)gAEFrameTime);
+	//Integrate((f32)gAEFrameTime);
 }
 
 
@@ -139,7 +139,7 @@ void RigidBody::ComputeAABB(vec2 * outPos, vec2 * outSize)
 		vec2 vertex2 = { right1 , down1 };
 
 		//we take the rotation of the obb
-		Matrix33 rotOBB = RotRad(mTransform.mRotation);
+		/*Matrix33 rotOBB = RotRad(mTransform.mRotation);
 
 		//we now rotate the vertices
 		vertex1 = rotOBB * vertex1;
@@ -147,7 +147,7 @@ void RigidBody::ComputeAABB(vec2 * outPos, vec2 * outSize)
 
 		//now, for the size, we'll be taking the biggest for each coordinate (of their absolute values) 
 		//between both vertices
-		*outSize = { max(fabs(vertex1.x), fabs(vertex2.x)), max(fabs(vertex1.y), fabs(vertex2.y)) };
+		*outSize = { max(fabs(vertex1.x), fabs(vertex2.x)), max(fabs(vertex1.y), fabs(vertex2.y)) };*/
 
 		//same as always, position is the same
 		*outPos = mTransform.mPosition;

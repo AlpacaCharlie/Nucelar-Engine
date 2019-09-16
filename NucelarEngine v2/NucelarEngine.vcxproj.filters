@@ -16,6 +16,9 @@
     <Filter Include="BasicTypes">
       <UniqueIdentifier>{0295bcc3-3cbb-4147-b845-72ee46f3046b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{c6aae888-fda7-40fb-984c-200f911dae38}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -74,6 +77,12 @@
     </ClCompile>
     <ClCompile Include="src\Engine\Components\PhysicsSystem.cpp">
       <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Math\Collisions.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Math\Vector2.cpp">
+      <Filter>Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -562,6 +571,12 @@
     </ClInclude>
     <ClInclude Include="src\Engine\Components\PhysicsSystem.h">
       <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Math\Collisions.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Math\Vector2.h">
+      <Filter>Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
