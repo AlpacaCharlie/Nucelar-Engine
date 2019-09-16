@@ -165,10 +165,17 @@
   <ItemGroup>
     <ClCompile Include="Extern\glm\detail\dummy.cpp" />
     <ClCompile Include="Extern\glm\detail\glm.cpp" />
+    <ClCompile Include="src\Editor\ImGuiDemo.cpp" />
+    <ClCompile Include="src\Engine\AEX\AEXRtti.cpp" />
+    <ClCompile Include="src\Engine\BasicTypes\NComponent.cpp" />
+    <ClCompile Include="src\Engine\BasicTypes\NGameObject.cpp" />
+    <ClCompile Include="src\Engine\Factory\Json.cpp" />
+    <ClCompile Include="src\Engine\Factory\Serializer.cpp" />
     <ClCompile Include="src\Engine\Graphics\Color\Color.cpp" />
     <ClCompile Include="src\Engine\Graphics\Graphics.cpp" />
     <ClCompile Include="src\Engine\Graphics\glad.c" />
     <ClCompile Include="src\Engine\Graphics\Vertex\Vertex.cpp" />
+    <ClCompile Include="src\Game\Level1.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -314,6 +321,18 @@
     <ClInclude Include="Extern\glm\vec3.hpp" />
     <ClInclude Include="Extern\glm\vec4.hpp" />
     <ClInclude Include="Extern\glm\vector_relational.hpp" />
+    <ClInclude Include="src\Editor\ImGuiDemo.h" />
+    <ClInclude Include="src\Engine\AEX\AEXBase.h" />
+    <ClInclude Include="src\Engine\AEX\AEXContainers.h" />
+    <ClInclude Include="src\Engine\AEX\AEXCore.h" />
+    <ClInclude Include="src\Engine\AEX\AEXDataTypes.h" />
+    <ClInclude Include="src\Engine\AEX\AEXRtti.h" />
+    <ClInclude Include="src\Engine\AEX\AEXSystem.h" />
+    <ClInclude Include="src\Engine\BasicTypes\NComponent.h" />
+    <ClInclude Include="src\Engine\BasicTypes\NGameObject.h" />
+    <ClInclude Include="src\Engine\Factory\Json.h" />
+    <ClInclude Include="src\Engine\Factory\json.hpp" />
+    <ClInclude Include="src\Engine\Factory\Serializer.h" />
     <ClInclude Include="src\Engine\Graphics\Color\Color.h" />
     <ClInclude Include="src\Engine\Graphics\Graphics.h" />
     <ClInclude Include="src\Engine\Graphics\Vertex\Vertex.h" />
@@ -428,6 +447,8 @@
     <None Include="Extern\glm\gtx\vector_angle.inl" />
     <None Include="Extern\glm\gtx\vector_query.inl" />
     <None Include="Extern\glm\gtx\wrap.inl" />
+    <None Include="imgui.ini" />
+    <None Include="NucelarEngine.VC.db" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

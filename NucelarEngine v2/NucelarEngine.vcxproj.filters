@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="BasicTypes">
+      <UniqueIdentifier>{0295bcc3-3cbb-4147-b845-72ee46f3046b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -34,6 +37,27 @@
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
     <ClCompile Include="Extern\glm\detail\glm.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Editor\ImGuiDemo.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\AEX\AEXRtti.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\BasicTypes\NGameObject.cpp">
+      <Filter>BasicTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\BasicTypes\NComponent.cpp">
+      <Filter>BasicTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Factory\Json.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Factory\Serializer.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Level1.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
@@ -473,6 +497,42 @@
     <ClInclude Include="Extern\glm\gtx\wrap.hpp">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="src\Editor\ImGuiDemo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\AEX\AEXRtti.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\AEX\AEXBase.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\AEX\AEXContainers.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\AEX\AEXCore.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\AEX\AEXDataTypes.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\AEX\AEXSystem.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\BasicTypes\NGameObject.h">
+      <Filter>BasicTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\BasicTypes\NComponent.h">
+      <Filter>BasicTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Factory\Json.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Factory\json.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Factory\Serializer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Extern\glm\detail\func_common.inl">
@@ -802,5 +862,7 @@
     <None Include="Extern\glm\gtx\wrap.inl">
       <Filter>Archivos de encabezado</Filter>
     </None>
+    <None Include="imgui.ini" />
+    <None Include="NucelarEngine.VC.db" />
   </ItemGroup>
 </Project>
