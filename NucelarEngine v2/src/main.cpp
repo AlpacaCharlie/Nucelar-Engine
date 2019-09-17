@@ -2,10 +2,9 @@
 #include <fstream>
 #include <sstream>
 
-
+#include "vec2.hpp"
 #include "Graphics.h"
 #include "Graphics/Color/Color.h"
-
 #include "Editor\ImGuiDemo.h"
 
 std::stringstream console;
@@ -13,7 +12,11 @@ std::stringstream console;
 int main()
 {
 
-   //Get the console string
+
+	glm::vec2 vect;
+	vect.g = 9.0f;
+
+	//Get the console string
 	auto* coutbuf = std::cout.rdbuf();
 	auto old_buf = std::cout.rdbuf(console.rdbuf());
 	
@@ -26,6 +29,9 @@ int main()
 		//glfwSetWindowMonitor(window, monitor, 0, 0, mode->width, mode->height, mode->refreshRate);
 
 		//glfwSetWindowMonitor()
+
+
+
 	while (!glfwWindowShouldClose(window))
 	{
 		//input
