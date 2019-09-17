@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Graphics/Color/Color.h"
 
+
 int main()
 {
 	GLFWwindow* window = Graphics::InitializeWindow(800, 600, false);//width and height are useless, it is fullscreen and with the resolution of the display
