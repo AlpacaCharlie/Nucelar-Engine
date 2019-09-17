@@ -1,4 +1,4 @@
-#include "ImGuiDemo.h"
+/*#include "ImGuiDemo.h"
 #include "../../Engine/ImGui/Gui.h"
 #include <sstream>
 
@@ -226,3 +226,4 @@ void ImGuiDemo::Render()
 
 	aexGraphics->Present();
 }
+*/
