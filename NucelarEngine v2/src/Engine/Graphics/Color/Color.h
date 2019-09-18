@@ -1,5 +1,18 @@
 #pragma once
 #include "vec4.hpp"
+
+#define RED    Color{ 255,   0,   0, 255 }
+#define GREEN  Color{   0, 255,   0, 255 }
+#define BLUE   Color{   0,   0, 255, 255 }
+#define WHYTE  Color{ 255, 255, 255, 255 }
+#define BLACK  Color{   0,   0,   0, 255 }
+#define GREY   Color{ 236, 236, 236, 255 }
+#define PURPLE Color{ 102,  51, 153, 255 }
+#define YELLOW Color{ 240, 255,   0, 255 }
+#define ORANGE Color{ 243, 156,  18, 255 }
+
+
+
 class Color {
 public:
 	union {
